@@ -435,7 +435,12 @@ def main():
     updated = max(checked, int(previous.get("profile_version", 0)) + 1)
     profiles = make_profiles(base, selected, tags, urls, updated)
     unknown = unmapped_mentions(catalog, sections)
-    source_url = (f"https://raw.githubusercontent.com/{args.repository}/{quote(args.branch, safe='')}/dist/Incy-YOTA-Whitelist.json" if args.repository else None)
+    # The import page and profile are deployed in the same Pages artifact.
+    # Avoid mixing a freshly deployed page with GitHub raw's cached old ref.
+    source_url = None
+    if args.repository:
+        owner, repository_name = args.repository.split("/", 1)
+        source_url = f"https://{owner}.github.io/{repository_name}/Incy-YOTA-Whitelist.json"
     report = {
         "checked_at": datetime.fromtimestamp(checked, timezone.utc).isoformat(),
         "profile_version": updated, "source": YOTA,

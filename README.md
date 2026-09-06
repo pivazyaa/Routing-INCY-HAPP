@@ -12,12 +12,12 @@
 
 Если установлен старый профиль и VPN не запускается: отключи маршрутизацию, подключи VPN и повтори импорт по кнопке на странице выше. Имя профиля и адрес обновлений сохранены. После импорта переподключись. Если цикл повторится, оставь маршрутизацию выключенной и проверь текст ошибки в журнале Incy; ключи и ссылку подписки публиковать не нужно.
 
-1. На iPhone открой [ссылку импорта как текст](https://raw.githubusercontent.com/pivazyaa/Routing-INCY-HAPP/main/dist/Incy-auto-import.txt) и скопируй её целиком.
+1. На iPhone открой [ссылку импорта как текст](https://pivazyaa.github.io/Routing-INCY-HAPP/Incy-auto-import.txt) и скопируй её целиком.
 2. Открой Incy и импортируй ссылку из буфера. Она начинается с `incy://autorouting/onadd/` и привязывает профиль к постоянному адресу.
 3. В профиле «YOTA iPhone - Official WL + Apple VPN + Ads» проверь значок облака. В «Источник обновлений» выбери **12 часов**. Без изменения в интерфейсе стандартный интервал Incy — 24 часа.
 4. Выбери свой VPN-сервер, включи маршрутизацию и переподключись.
 
-Прямой адрес JSON: [Incy-YOTA-Whitelist.json](https://raw.githubusercontent.com/pivazyaa/Routing-INCY-HAPP/main/dist/Incy-YOTA-Whitelist.json).
+Прямой адрес JSON: [Incy-YOTA-Whitelist.json](https://pivazyaa.github.io/Routing-INCY-HAPP/Incy-YOTA-Whitelist.json). Новые импорты используют GitHub Pages: профиль и кнопка публикуются вместе. Старые ссылки на `raw.githubusercontent.com` остаются рабочими, но GitHub может некоторое время отдавать предыдущую версию из кэша.
 
 Обычная ссылка `incy://routing/onadd/…` — разовый импорт. Она не заменяет ссылку `autorouting` для автоматического обновления.
 
