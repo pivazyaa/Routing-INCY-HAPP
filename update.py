@@ -347,7 +347,7 @@ def write_outputs(out, profiles, report, source_url):
     if source_url:
         auto = "incy://autorouting/onadd/" + source_url
         texts["Incy-auto-import.txt"] = auto + "\n"
-        auto_ui = f'<p><a class="button" href="{html.escape(auto, quote=True)}">Incy: добавить с автообновлением</a></p><p>После публикации файлов выбери в Incy частоту обновления 12 часов.</p>'
+        auto_ui = f'<p><a class="button" href="{html.escape(auto, quote=True)}">Incy: добавить с автообновлением</a></p><p>В Incy выбери частоту обновления 12 часов и проверь значок облака у профиля.</p>'
     else:
         auto_ui = '<p class="notice">Автообновление ещё не подключено: нужен опубликованный адрес профиля. Ниже доступен обычный импорт текущих правил.</p>'
     texts["index.html"] = '''<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>YOTA — маршрутизация iPhone</title><style>body{font:17px/1.55 system-ui;max-width:760px;margin:40px auto;padding:0 20px;background:#0d1420;color:#edf4ff}a{color:#77d7ff}.button{display:inline-block;background:#83ddff;color:#071521;padding:12px 18px;border-radius:12px;text-decoration:none;margin:5px 0}.notice{padding:14px;background:#28364a;border-radius:12px}textarea{width:100%;box-sizing:border-box;min-height:100px;background:#182334;color:white;border:1px solid #43566d;border-radius:8px;padding:10px}details{margin:18px 0}small{color:#b2c3d5}</style><h1>YOTA · iPhone</h1><p>Официальный белый список → DIRECT.<br>Apple и остальные сайты → VPN.<br>Рекламные домены → блокировка.</p>''' + auto_ui
