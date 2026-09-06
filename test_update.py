@@ -2,6 +2,7 @@
 import copy
 import base64
 import json
+import ipaddress
 from pathlib import Path
 import unittest
 
@@ -132,6 +133,7 @@ class SubscriptionTests(unittest.TestCase):
 class ProfileTests(unittest.TestCase):
     def setUp(self):
         self.tags = {"apple": [(2, "apple.com"), (2, "icloud.com"), (2, "mzstatic.com")],
+                     "category-ads": [(2, "doubleclick.net")],
                      "category-ads-all": [(2, "doubleclick.net"), (2, "mc.yandex.ru")]}
         self.urls = {"geoip.dat": "https://example.org/geoip.dat", "geosite.dat": "https://example.org/geosite.dat"}
         self.selected = update.select_services(CATALOG, [
@@ -147,12 +149,18 @@ class ProfileTests(unittest.TestCase):
         configs = self.profiles()
         for app, config in configs.items():
             self.assertEqual(config["GlobalProxy"], "true")
-            self.assertEqual(config["DirectIp"], ["geoip:private"])
-            self.assertIn("geosite:apple", config["ProxySites"])
             self.assertNotIn("geosite:ru", config["DirectSites"])
             for host in ("apple.com", "apps.apple.com", "icloud.com", "example.ru", "rutracker.org", "tbank.ru"):
                 self.assertFalse(update.suffix_match(host, {r[7:] for r in config["DirectSites"]}), (app, host))
-        self.assertIs(configs["Incy"]["useChunkFiles"], True)
+        self.assertIn("domain:apple.com", configs["Incy"]["ProxySites"])
+        self.assertIn("geosite:apple", configs["Happ"]["ProxySites"])
+        self.assertEqual(configs["Happ"]["DirectIp"], ["geoip:private"])
+        private = [ipaddress.ip_network(r) for r in configs["Incy"]["DirectIp"]]
+        for address in ("10.1.2.3", "192.168.1.1", "127.0.0.1", "fd00::1", "fe80::1"):
+            self.assertTrue(any(ipaddress.ip_address(address) in n for n in private))
+        for address in ("17.253.144.10", "94.140.14.14", "77.88.8.8", "1.1.1.1"):
+            self.assertFalse(any(ipaddress.ip_address(address) in n for n in private))
+        self.assertIs(configs["Incy"]["useChunkFiles"], False)
         self.assertEqual(configs["Happ"]["UseChunkFiles"], "true")
         self.assertEqual(configs["Happ"]["RouteOrder"], "block-proxy-direct")
 
@@ -160,6 +168,36 @@ class ProfileTests(unittest.TestCase):
         for config in self.profiles().values():
             self.assertEqual(config["DnsHosts"]["domain:mc.yandex.ru"], "0.0.0.0")
             self.assertEqual(config["DnsHosts"]["domain:appmetrica.yandex.ru"], "0.0.0.0")
+
+    def test_incy_starts_without_external_geodata_and_retains_adguard(self):
+        config = self.profiles()["Incy"]
+        update.validate_incy_light(config)
+        self.assertEqual(config["Geoipurl"], "")
+        self.assertEqual(config["Geositeurl"], "")
+        self.assertIn("domain:doubleclick.net", config["BlockSites"])
+        self.assertIn("domain:mc.yandex.ru", config["BlockSites"])
+        self.assertEqual(config["RemoteDNSDomain"], "https://dns.adguard-dns.com/dns-query")
+
+    def test_incy_does_not_expand_the_heavy_ad_tag(self):
+        self.tags["category-ads-all"] += [(2, f"ad{i}.example") for i in range(10000)]
+        configs = self.profiles()
+        self.assertNotIn("domain:ad9999.example", configs["Incy"]["BlockSites"])
+        self.assertIn("geosite:category-ads-all", configs["Happ"]["BlockSites"])
+
+    def test_incy_rejects_reintroduced_geodata_or_excessive_rules(self):
+        for field, rule in (("ProxySites", "geosite:apple"), ("DirectIp", "geoip:private"),
+                            ("BlockSites", "ext:other.dat:ads")):
+            config = self.profiles()["Incy"]
+            config[field].append(rule)
+            with self.assertRaises(ValueError):
+                update.validate_incy_light(config)
+        self.tags["category-ads"] += [(2, f"ad{i}.example") for i in range(update.INCY_RULE_LIMIT)]
+        with self.assertRaises(ValueError):
+            self.profiles()
+
+    def test_inline_rules_preserve_suffix_exact_regex_and_plain_types(self):
+        self.assertEqual(update.inline_rules([(3, "a.test"), (2, "b.test"), (1, "^c\\.test$"), (0, "tracker")]),
+                         ["tracker", "regexp:^c\\.test$", "domain:b.test", "full:a.test"])
 
     def test_apple_or_ad_catalogue_entry_is_rejected(self):
         for name in ("apple.com", "doubleclick.net"):

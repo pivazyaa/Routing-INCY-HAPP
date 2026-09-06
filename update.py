@@ -24,6 +24,15 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parent
 YOTA = "https://www.yota.ru/whitelist"
 GEO_REPO = "https://api.github.com/repos/Loyalsoldier/v2ray-rules-dat/releases/latest"
+# Explicit equivalent of Loyalsoldier's PRIVATE tag. Incy must not need a .dat
+# file to start the iOS Network Extension.
+PRIVATE_NETWORKS = [
+    "0.0.0.0/8", "10.0.0.0/8", "100.64.0.0/10", "127.0.0.0/8",
+    "169.254.0.0/16", "172.16.0.0/12", "192.0.0.0/24", "192.0.2.0/24",
+    "192.88.99.0/24", "192.168.0.0/16", "198.18.0.0/15", "198.51.100.0/24",
+    "203.0.113.0/24", "224.0.0.0/3", "::/127", "fc00::/7", "fe80::/10", "ff00::/8",
+]
+INCY_RULE_LIMIT = 6000
 
 
 class PageError(ValueError):
@@ -226,7 +235,7 @@ def read_tags(data):
             continue
         items = list(fields(raw))
         name = next(v.decode().lower() for n, v in items if n == 1)
-        if name in ("apple", "category-ads-all"):
+        if name in ("apple", "category-ads", "category-ads-all"):
             entries = []
             for n, raw_domain in items:
                 if n == 2:
@@ -235,6 +244,8 @@ def read_tags(data):
             tags[name] = entries
     if not tags.get("apple") or len(tags.get("category-ads-all", [])) < 1000:
         raise ValueError("Required Apple or advertising category missing")
+    if not 100 <= len(tags.get("category-ads", [])) <= 3000:
+        raise ValueError("Compact advertising category missing or unexpectedly large")
     return tags
 
 
@@ -249,6 +260,23 @@ class Matcher:
         return (host in self.full or suffix_match(host, self.suffix)
                 or any(v in host for v in self.plain)
                 or any(r.search(host) for r in self.regex))
+
+
+def inline_rules(entries):
+    """Keep protobuf match semantics while removing runtime geosite lookups."""
+    prefixes = {0: "", 1: "regexp:", 2: "domain:", 3: "full:"}
+    return [prefixes[kind] + name for kind, name in sorted(set(entries))]
+
+
+def validate_incy_light(profile):
+    rules = [rule for field in ("DirectSites", "DirectIp", "ProxySites", "ProxyIp", "BlockSites", "BlockIp")
+             for rule in profile[field]]
+    if any(rule.startswith(("geoip:", "geosite:", "ext:")) for rule in rules):
+        raise ValueError("Incy light profile must not load external geodata")
+    if profile["Geoipurl"] or profile["Geositeurl"] or profile["useChunkFiles"]:
+        raise ValueError("Incy light profile must not download or trim geodata")
+    if len(rules) + len(profile["DnsHosts"]) > INCY_RULE_LIMIT:
+        raise ValueError("Incy light rule budget exceeded; keeping previous profile")
 
 
 def make_profiles(base, selected, tags, geourls, updated):
@@ -280,6 +308,20 @@ def make_profiles(base, selected, tags, geourls, updated):
     happ = copy.deepcopy(result)
     happ.pop("useChunkFiles", None)
     happ.update({"UseChunkFiles": "true", "RouteOrder": "block-proxy-direct"})
+    # The full ads tag currently expands to ~190,000 entries. Chunking only
+    # discards other tags; it does not make that tag small enough for iOS.
+    # Keep the large filter at AdGuard DNS and inline a compact local filter.
+    # Ads inside DIRECT roots still get local DNS + routing blocks.
+    local_ads = [rule for rule, ip in result["DnsHosts"].items() if ip == "0.0.0.0"]
+    result.update({
+        "DirectIp": list(PRIVATE_NETWORKS),
+        "ProxySites": sorted(set(inline_rules(tags["apple"]) +
+                                 [r for r in result["ProxySites"] if r != "geosite:apple"])),
+        "BlockSites": sorted(set(inline_rules(tags["category-ads"]) + local_ads +
+                                 [r for r in result["BlockSites"] if r != "geosite:category-ads-all"])),
+        "Geoipurl": "", "Geositeurl": "", "useChunkFiles": False,
+    })
+    validate_incy_light(result)
     return {"Incy": result, "Happ": happ}
 
 
@@ -350,7 +392,7 @@ def write_outputs(out, profiles, report, source_url):
         auto_ui = f'<p><a class="button" href="{html.escape(auto, quote=True)}">Incy: добавить с автообновлением</a></p><p>В Incy выбери частоту обновления 12 часов и проверь значок облака у профиля.</p>'
     else:
         auto_ui = '<p class="notice">Автообновление ещё не подключено: нужен опубликованный адрес профиля. Ниже доступен обычный импорт текущих правил.</p>'
-    texts["index.html"] = '''<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>YOTA — маршрутизация iPhone</title><style>body{font:17px/1.55 system-ui;max-width:760px;margin:40px auto;padding:0 20px;background:#0d1420;color:#edf4ff}a{color:#77d7ff}.button{display:inline-block;background:#83ddff;color:#071521;padding:12px 18px;border-radius:12px;text-decoration:none;margin:5px 0}.notice{padding:14px;background:#28364a;border-radius:12px}textarea{width:100%;box-sizing:border-box;min-height:100px;background:#182334;color:white;border:1px solid #43566d;border-radius:8px;padding:10px}details{margin:18px 0}small{color:#b2c3d5}</style><h1>YOTA · iPhone</h1><p>Официальный белый список → DIRECT.<br>Apple и остальные сайты → VPN.<br>Рекламные домены → блокировка.</p>''' + auto_ui
+    texts["index.html"] = '''<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>YOTA — маршрутизация iPhone</title><style>body{font:17px/1.55 system-ui;max-width:760px;margin:40px auto;padding:0 20px;background:#0d1420;color:#edf4ff}a{color:#77d7ff}.button{display:inline-block;background:#83ddff;color:#071521;padding:12px 18px;border-radius:12px;text-decoration:none;margin:5px 0}.notice{padding:14px;background:#28364a;border-radius:12px}textarea{width:100%;box-sizing:border-box;min-height:100px;background:#182334;color:white;border:1px solid #43566d;border-radius:8px;padding:10px}details{margin:18px 0}small{color:#b2c3d5}</style><h1>YOTA · iPhone</h1><p>Официальный белый список → DIRECT.<br>Apple и остальные сайты → VPN.<br>Рекламные домены → блокировка.</p><p class="notice">Incy: облегчённая версия от 6 сентября 2026. Если со старым профилем VPN постоянно переподключался, отключи маршрутизацию, подключись к VPN и повторно импортируй профиль кнопкой ниже. Затем переподключи VPN. Удалять подписку с серверами не нужно.</p>''' + auto_ui
     for app in ("Incy", "Happ"):
         escaped = html.escape(links[app], quote=True)
         texts["index.html"] += f'<details><summary>{app}: импорт текущего профиля</summary><p><a class="button" href="{escaped}">Открыть в {app}</a></p><textarea readonly onclick="this.select()">{escaped}</textarea><small>Это разовый импорт. Сам по себе он не включает обновление белого списка.</small></details>'
@@ -405,6 +447,10 @@ def main():
         "removed_service_ids": sorted(old_ids - new_ids),
         "services": [{"id": s["id"], "name": s["name"], "domains": s["domains"], "evidence": evidence[s["id"]]} for s in selected],
         "sections": sections, "unmapped_mentions": unknown, "geodata": geo_report,
+        "incy_profile_mode": "inline-light-v1",
+        "incy_local_ad_rules": len(profiles["Incy"]["BlockSites"]),
+        "incy_apple_rules": len(profiles["Incy"]["ProxySites"]) - 1,
+        "full_upstream_ad_rules": len(tags["category-ads-all"]),
         "incy_source_url": source_url,
         "deployment": "URLs generated; hosting and iPhone subscription must be verified separately" if source_url else "Local build only; automatic updates not connected",
         "limitations": ["Official list names services, not their complete domain/IP ACL.", "New unrecognized services remain via VPN until domain review.", "Happ routing must be included in its VPN subscription.", "iOS can delay background refresh; reconnect after routing changes.", "No iPhone/YOTA-whitelist runtime test performed."],
