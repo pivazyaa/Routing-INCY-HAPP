@@ -1,0 +1,1 @@
+incy://autorouting/onadd/https://raw.githubusercontent.com/pivazyaa/Routing-INCY-HAPP/main/dist/Incy-YOTA-Whitelist.json

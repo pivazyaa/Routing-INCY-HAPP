@@ -1,0 +1,2510 @@
+{
+  "checked_at": "2026-09-06T16:35:26+00:00",
+  "profile_version": 1788712526,
+  "source": "https://www.yota.ru/whitelist",
+  "scope": "Federal services; region unspecified",
+  "source_sha256": "60d68e84e5b241d06b17577c4f9bbdb02742963630b43fea38a242d9e867302c",
+  "catalog_sha256": "9d62584d3a41f71a801701e94ce674f515e99de09b0dd04a288767ffe29c43b2",
+  "active_services_count": 156,
+  "direct_domains_count": 286,
+  "active_service_ids": [
+    "service-001",
+    "service-002",
+    "service-003",
+    "service-004",
+    "service-005",
+    "service-006",
+    "service-007",
+    "service-008",
+    "service-009",
+    "service-010",
+    "service-011",
+    "service-012",
+    "service-013",
+    "service-014",
+    "service-015",
+    "service-016",
+    "service-017",
+    "service-018",
+    "service-019",
+    "service-020",
+    "service-021",
+    "service-022",
+    "service-023",
+    "service-024",
+    "service-025",
+    "service-026",
+    "service-027",
+    "service-028",
+    "service-029",
+    "service-030",
+    "service-031",
+    "service-032",
+    "service-033",
+    "service-034",
+    "service-035",
+    "service-036",
+    "service-037",
+    "service-038",
+    "service-039",
+    "service-040",
+    "service-041",
+    "service-042",
+    "service-043",
+    "service-044",
+    "service-045",
+    "service-046",
+    "service-047",
+    "service-048",
+    "service-049",
+    "service-050",
+    "service-051",
+    "service-052",
+    "service-053",
+    "service-054",
+    "service-055",
+    "service-056",
+    "service-057",
+    "service-058",
+    "service-059",
+    "service-060",
+    "service-061",
+    "service-062",
+    "service-063",
+    "service-064",
+    "service-065",
+    "service-066",
+    "service-067",
+    "service-068",
+    "service-069",
+    "service-070",
+    "service-071",
+    "service-072",
+    "service-073",
+    "service-074",
+    "service-075",
+    "service-076",
+    "service-077",
+    "service-078",
+    "service-079",
+    "service-080",
+    "service-081",
+    "service-082",
+    "service-083",
+    "service-084",
+    "service-085",
+    "service-086",
+    "service-087",
+    "service-088",
+    "service-089",
+    "service-090",
+    "service-091",
+    "service-092",
+    "service-093",
+    "service-094",
+    "service-095",
+    "service-096",
+    "service-097",
+    "service-098",
+    "service-099",
+    "service-100",
+    "service-101",
+    "service-102",
+    "service-103",
+    "service-104",
+    "service-105",
+    "service-106",
+    "service-107",
+    "service-108",
+    "service-109",
+    "service-110",
+    "service-111",
+    "service-112",
+    "service-113",
+    "service-114",
+    "service-115",
+    "service-116",
+    "service-117",
+    "service-118",
+    "service-119",
+    "service-120",
+    "service-121",
+    "service-122",
+    "service-123",
+    "service-124",
+    "service-125",
+    "service-126",
+    "service-127",
+    "service-128",
+    "service-129",
+    "service-130",
+    "service-131",
+    "service-132",
+    "service-133",
+    "service-134",
+    "service-135",
+    "service-136",
+    "service-137",
+    "service-138",
+    "service-139",
+    "service-140",
+    "service-141",
+    "service-142",
+    "service-143",
+    "service-144",
+    "service-145",
+    "service-146",
+    "service-147",
+    "service-148",
+    "service-149",
+    "service-150",
+    "service-151",
+    "service-152",
+    "service-153",
+    "service-154",
+    "service-155",
+    "service-156"
+  ],
+  "added_service_ids": [],
+  "removed_service_ids": [],
+  "services": [
+    {
+      "id": "service-001",
+      "name": "YOTA",
+      "domains": [
+        "yota.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Yota",
+          "match": "Yota"
+        }
+      ]
+    },
+    {
+      "id": "service-002",
+      "name": "Госуслуги, Госключ, ГИС ЖКХ",
+      "domains": [
+        "gosuslugi.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Госуслуги и документы",
+          "match": "Госуслуги"
+        }
+      ]
+    },
+    {
+      "id": "service-003",
+      "name": "Почта России",
+      "domains": [
+        "pochta.ru",
+        "russianpost.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Госуслуги и документы",
+          "match": "Почта России"
+        }
+      ]
+    },
+    {
+      "id": "service-004",
+      "name": "ГИС ТОР КНД, Инспектор",
+      "domains": [
+        "knd.gov.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Госуслуги и документы",
+          "match": "ГИС ТОР КНД"
+        },
+        {
+          "section": "Работа и образование",
+          "match": "Инспектор"
+        }
+      ]
+    },
+    {
+      "id": "service-005",
+      "name": "Федеральное казначейство",
+      "domains": [
+        "roskazna.gov.ru",
+        "roskazna.ru",
+        "budget.gov.ru",
+        "zakupki.gov.ru",
+        "bus.gov.ru",
+        "torgi.gov.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Госуслуги и документы",
+          "match": "Федеральное казначейство"
+        }
+      ]
+    },
+    {
+      "id": "service-006",
+      "name": "ЦРПТ, Честный знак",
+      "domains": [
+        "crpt.ru",
+        "честныйзнак.рф"
+      ],
+      "evidence": [
+        {
+          "section": "Госуслуги и документы",
+          "match": "ЦРПТ"
+        }
+      ]
+    },
+    {
+      "id": "service-007",
+      "name": "ГИС ЭПД",
+      "domains": [
+        "epd-portal.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Госуслуги и документы",
+          "match": "ГИС ЭПД"
+        }
+      ]
+    },
+    {
+      "id": "service-008",
+      "name": "Платформа для выборов",
+      "domains": [
+        "vybory.gov.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Госуслуги и документы",
+          "match": "платформа для выборов"
+        }
+      ]
+    },
+    {
+      "id": "service-009",
+      "name": "Правительство России",
+      "domains": [
+        "government.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Органы власти",
+          "match": "Правительства"
+        }
+      ]
+    },
+    {
+      "id": "service-010",
+      "name": "Президент России",
+      "domains": [
+        "kremlin.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Органы власти",
+          "match": "Администрации Президента России"
+        }
+      ]
+    },
+    {
+      "id": "service-011",
+      "name": "Совет Федерации",
+      "domains": [
+        "council.gov.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Органы власти",
+          "match": "Совет Федерации"
+        }
+      ]
+    },
+    {
+      "id": "service-012",
+      "name": "ФНС",
+      "domains": [
+        "nalog.gov.ru",
+        "nalog.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Органы власти",
+          "match": "ФНС"
+        }
+      ]
+    },
+    {
+      "id": "service-013",
+      "name": "МВД",
+      "domains": [
+        "мвд.рф",
+        "mvd.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Органы власти",
+          "match": "МВД"
+        }
+      ]
+    },
+    {
+      "id": "service-014",
+      "name": "МЧС",
+      "domains": [
+        "mchs.gov.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Органы власти",
+          "match": "МЧС"
+        }
+      ]
+    },
+    {
+      "id": "service-015",
+      "name": "Прямая линия с Владимиром Путиным",
+      "domains": [
+        "moskva-putinu.ru",
+        "москва-путину.рф"
+      ],
+      "evidence": [
+        {
+          "section": "Государственные проекты и компании",
+          "match": "Прямая линия с Владимиром Путиным"
+        }
+      ]
+    },
+    {
+      "id": "service-016",
+      "name": "Объясняем.рф",
+      "domains": [
+        "объясняем.рф"
+      ],
+      "evidence": [
+        {
+          "section": "Государственные проекты и компании",
+          "match": "Объясняем.рф"
+        }
+      ]
+    },
+    {
+      "id": "service-017",
+      "name": "Движение первых",
+      "domains": [
+        "будьвдвижении.рф",
+        "pervye.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Государственные проекты и компании",
+          "match": "Движение первых"
+        }
+      ]
+    },
+    {
+      "id": "service-018",
+      "name": "КС Среда",
+      "domains": [
+        "sreda.digital.gov.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Государственные проекты и компании",
+          "match": "КС Среда"
+        }
+      ]
+    },
+    {
+      "id": "service-019",
+      "name": "Портал госслужбы",
+      "domains": [
+        "gossluzhba.gov.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Государственные проекты и компании",
+          "match": "портал госслужбы"
+        }
+      ]
+    },
+    {
+      "id": "service-020",
+      "name": "Росатом",
+      "domains": [
+        "rosatom.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Государственные проекты и компании",
+          "match": "Росатом"
+        }
+      ]
+    },
+    {
+      "id": "service-021",
+      "name": "Россети",
+      "domains": [
+        "rosseti.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Государственные проекты и компании",
+          "match": "Россети"
+        }
+      ]
+    },
+    {
+      "id": "service-022",
+      "name": "Росагролизинг",
+      "domains": [
+        "rosagroleasing.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Государственные проекты и компании",
+          "match": "Росагролизинг"
+        }
+      ]
+    },
+    {
+      "id": "service-023",
+      "name": "Роскачество",
+      "domains": [
+        "rskrf.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Государственные проекты и компании",
+          "match": "Роскачество"
+        }
+      ]
+    },
+    {
+      "id": "service-024",
+      "name": "АО ГЛОНАСС",
+      "domains": [
+        "ao-glonass.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Государственные проекты и компании",
+          "match": "АО ГЛОНАСС"
+        }
+      ]
+    },
+    {
+      "id": "service-025",
+      "name": "Ростех",
+      "domains": [
+        "rostec.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Государственные проекты и компании",
+          "match": "Ростех"
+        }
+      ]
+    },
+    {
+      "id": "service-026",
+      "name": "Роснефть",
+      "domains": [
+        "rosneft.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Государственные проекты и компании",
+          "match": "Роснефть"
+        }
+      ]
+    },
+    {
+      "id": "service-027",
+      "name": "ПСБ",
+      "domains": [
+        "psbank.ru",
+        "psb.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Банки",
+          "match": "ПСБ"
+        }
+      ]
+    },
+    {
+      "id": "service-028",
+      "name": "ВТБ",
+      "domains": [
+        "vtb.ru",
+        "vtb.com"
+      ],
+      "evidence": [
+        {
+          "section": "Банки",
+          "match": "ВТБ"
+        }
+      ]
+    },
+    {
+      "id": "service-029",
+      "name": "Альфа-Банк",
+      "domains": [
+        "alfabank.ru",
+        "alfabank.com"
+      ],
+      "evidence": [
+        {
+          "section": "Банки",
+          "match": "Альфа-Банк"
+        }
+      ]
+    },
+    {
+      "id": "service-030",
+      "name": "Газпромбанк",
+      "domains": [
+        "gazprombank.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Банки",
+          "match": "Газпромбанк"
+        }
+      ]
+    },
+    {
+      "id": "service-031",
+      "name": "Мир, СБП, Mir Pay",
+      "domains": [
+        "nspk.ru",
+        "mironline.ru",
+        "privetmir.ru",
+        "vamprivet.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Банки",
+          "match": "платежная система Мир"
+        }
+      ]
+    },
+    {
+      "id": "service-032",
+      "name": "Финуслуги",
+      "domains": [
+        "finuslugi.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Финансы",
+          "match": "Финуслуги"
+        }
+      ]
+    },
+    {
+      "id": "service-033",
+      "name": "Московская биржа",
+      "domains": [
+        "moex.com"
+      ],
+      "evidence": [
+        {
+          "section": "Финансы",
+          "match": "Московская биржа"
+        }
+      ]
+    },
+    {
+      "id": "service-034",
+      "name": "Банк России",
+      "domains": [
+        "cbr.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Финансы",
+          "match": "Банк России"
+        }
+      ]
+    },
+    {
+      "id": "service-035",
+      "name": "ВКонтакте, VK Видео, Музыка, Мессенджер",
+      "domains": [
+        "vk.com",
+        "vk.ru",
+        "vk.me",
+        "vk.cc",
+        "vkontakte.ru",
+        "vkontakte.com",
+        "mvk.com",
+        "vkvideo.ru",
+        "boom.ru",
+        "vkmessenger.app",
+        "vkmessenger.com"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы VK",
+          "match": "Все сервисы VK"
+        }
+      ]
+    },
+    {
+      "id": "service-036",
+      "name": "Служебные домены и медиа VK",
+      "domains": [
+        "userapi.com",
+        "userapi.ru",
+        "vkuser.net",
+        "vkusercdn.ru",
+        "vkuserphoto.ru",
+        "vkuseraudio.com",
+        "vkuseraudio.net",
+        "vkuseraudio.ru",
+        "vkuservideo.com",
+        "vkuservideo.net",
+        "vkuservideo.ru",
+        "vkuserlive.com",
+        "vkuserlive.net",
+        "vk-cdn.net",
+        "vk-cdn.me",
+        "cdn-vk.net",
+        "cdn-vk.ru",
+        "vk-portal.net",
+        "vkcache.com"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы VK",
+          "match": "Все сервисы VK"
+        }
+      ]
+    },
+    {
+      "id": "service-037",
+      "name": "Mail.ru и почтовые домены",
+      "domains": [
+        "mail.ru",
+        "bk.ru",
+        "inbox.ru",
+        "list.ru",
+        "internet.ru",
+        "xmail.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы VK",
+          "match": "Все сервисы VK"
+        }
+      ]
+    },
+    {
+      "id": "service-038",
+      "name": "Служебные домены Mail.ru",
+      "domains": [
+        "imgsmail.ru",
+        "cdnmail.ru",
+        "attachmail.ru",
+        "mrgcdn.ru",
+        "smailru.net",
+        "vmailru.net",
+        "mycdn.me"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы VK",
+          "match": "Все сервисы VK"
+        }
+      ]
+    },
+    {
+      "id": "service-039",
+      "name": "Одноклассники",
+      "domains": [
+        "ok.ru",
+        "ok.me",
+        "odnoklassniki.ru",
+        "odkl.ru",
+        "apiok.ru",
+        "okcdn.ru",
+        "oktech.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы VK",
+          "match": "Все сервисы VK"
+        }
+      ]
+    },
+    {
+      "id": "service-040",
+      "name": "Дзен",
+      "domains": [
+        "dzen.ru",
+        "dzeninfra.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы VK",
+          "match": "Все сервисы VK"
+        }
+      ]
+    },
+    {
+      "id": "service-041",
+      "name": "RuStore",
+      "domains": [
+        "rustore.ru",
+        "rustore.team",
+        "rustore.tv"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы VK",
+          "match": "Все сервисы VK"
+        }
+      ]
+    },
+    {
+      "id": "service-042",
+      "name": "МАКС",
+      "domains": [
+        "max.ru",
+        "oneme.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы VK",
+          "match": "Все сервисы VK"
+        }
+      ]
+    },
+    {
+      "id": "service-043",
+      "name": "Сферум",
+      "domains": [
+        "sferum.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы VK",
+          "match": "Все сервисы VK"
+        }
+      ]
+    },
+    {
+      "id": "service-044",
+      "name": "VK Play",
+      "domains": [
+        "vkplay.ru",
+        "vkplay.live"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы VK",
+          "match": "Все сервисы VK"
+        }
+      ]
+    },
+    {
+      "id": "service-045",
+      "name": "Юла",
+      "domains": [
+        "youla.ru",
+        "youla.io"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы VK",
+          "match": "Все сервисы VK"
+        }
+      ]
+    },
+    {
+      "id": "service-046",
+      "name": "Образовательные сервисы VK",
+      "domains": [
+        "uchi.ru",
+        "yaklass.ru",
+        "skillbox.ru",
+        "skillfactory.ru",
+        "gb.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы VK",
+          "match": "Все сервисы VK"
+        }
+      ]
+    },
+    {
+      "id": "service-047",
+      "name": "Поиск, Почта, Карты, Навигатор, Музыка, Еда, Лавка, Такси",
+      "domains": [
+        "yandex.ru",
+        "ya.ru",
+        "yandex.com",
+        "yandex.net",
+        "yandexgo.com"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы Яндекса",
+          "match": "Все сервисы Яндекса"
+        }
+      ]
+    },
+    {
+      "id": "service-048",
+      "name": "Статика и медиа Яндекса",
+      "domains": [
+        "yastatic.net",
+        "yastat.net",
+        "yastatic-net.ru",
+        "yndx.net",
+        "yccdn.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы Яндекса",
+          "match": "Все сервисы Яндекса"
+        }
+      ]
+    },
+    {
+      "id": "service-049",
+      "name": "Алиса AI",
+      "domains": [
+        "alice.yandex.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы Яндекса",
+          "match": "Все сервисы Яндекса"
+        }
+      ]
+    },
+    {
+      "id": "service-050",
+      "name": "Едадил",
+      "domains": [
+        "edadeal.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы Яндекса",
+          "match": "Все сервисы Яндекса"
+        }
+      ]
+    },
+    {
+      "id": "service-051",
+      "name": "Шедеврум",
+      "domains": [
+        "shedevrum.ai"
+      ],
+      "evidence": [
+        {
+          "section": "Все сервисы Яндекса",
+          "match": "Все сервисы Яндекса"
+        }
+      ]
+    },
+    {
+      "id": "service-052",
+      "name": "OZON",
+      "domains": [
+        "ozon.ru",
+        "ozon.com",
+        "ozonusercontent.com",
+        "ozone.ru",
+        "o3.ru",
+        "o3t.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Маркетплейсы",
+          "match": "OZON"
+        }
+      ]
+    },
+    {
+      "id": "service-053",
+      "name": "Wildberries",
+      "domains": [
+        "wildberries.ru",
+        "wb.ru",
+        "wb-basket.ru",
+        "wbbasket.ru",
+        "wbcontent.net",
+        "wbstatic.net",
+        "wbstatic.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Маркетплейсы",
+          "match": "Wildberries"
+        }
+      ]
+    },
+    {
+      "id": "service-054",
+      "name": "Мегамаркет",
+      "domains": [
+        "megamarket.ru",
+        "sbermegamarket.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Маркетплейсы",
+          "match": "Мегамаркет"
+        }
+      ]
+    },
+    {
+      "id": "service-055",
+      "name": "Магнит",
+      "domains": [
+        "magnit.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Магнит"
+        }
+      ]
+    },
+    {
+      "id": "service-056",
+      "name": "Азбука вкуса",
+      "domains": [
+        "av.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Азбука вкуса"
+        }
+      ]
+    },
+    {
+      "id": "service-057",
+      "name": "Дикси",
+      "domains": [
+        "dixy.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Дикси"
+        }
+      ]
+    },
+    {
+      "id": "service-058",
+      "name": "Пятерочка",
+      "domains": [
+        "5ka.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Пятерочка"
+        }
+      ]
+    },
+    {
+      "id": "service-059",
+      "name": "Перекресток",
+      "domains": [
+        "perekrestok.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Перекресток"
+        }
+      ]
+    },
+    {
+      "id": "service-060",
+      "name": "Чижик",
+      "domains": [
+        "chizhik.club"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Чижик"
+        }
+      ]
+    },
+    {
+      "id": "service-061",
+      "name": "METRO",
+      "domains": [
+        "metro-cc.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "METRO"
+        }
+      ]
+    },
+    {
+      "id": "service-062",
+      "name": "ВкусВилл",
+      "domains": [
+        "vkusvill.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "ВкусВилл"
+        }
+      ]
+    },
+    {
+      "id": "service-063",
+      "name": "SPAR",
+      "domains": [
+        "myspar.ru",
+        "spar.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "SPAR"
+        }
+      ]
+    },
+    {
+      "id": "service-064",
+      "name": "Ашан",
+      "domains": [
+        "auchan.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Ашан"
+        }
+      ]
+    },
+    {
+      "id": "service-065",
+      "name": "Петрович",
+      "domains": [
+        "petrovich.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Петрович"
+        }
+      ]
+    },
+    {
+      "id": "service-066",
+      "name": "Детский мир",
+      "domains": [
+        "detmir.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Детский мир"
+        }
+      ]
+    },
+    {
+      "id": "service-067",
+      "name": "Много лосося",
+      "domains": [
+        "mnogolososya.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Много лосося"
+        }
+      ]
+    },
+    {
+      "id": "service-068",
+      "name": "Вкусно — и точка",
+      "domains": [
+        "vkusnoitochka.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Вкусно — и точка"
+        }
+      ]
+    },
+    {
+      "id": "service-069",
+      "name": "Бургер Кинг",
+      "domains": [
+        "burgerkingrus.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Бургер Кинг"
+        }
+      ]
+    },
+    {
+      "id": "service-070",
+      "name": "Самокат",
+      "domains": [
+        "samokat.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Самокат"
+        }
+      ]
+    },
+    {
+      "id": "service-071",
+      "name": "Купер",
+      "domains": [
+        "kuper.ru",
+        "sbermarket.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Купер"
+        }
+      ]
+    },
+    {
+      "id": "service-072",
+      "name": "Лента",
+      "domains": [
+        "lenta.com"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Лента"
+        }
+      ]
+    },
+    {
+      "id": "service-073",
+      "name": "О'КЕЙ",
+      "domains": [
+        "okmarket.ru",
+        "okeydostavka.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "О КЕЙ"
+        }
+      ]
+    },
+    {
+      "id": "service-074",
+      "name": "Додо Пицца",
+      "domains": [
+        "dodopizza.ru",
+        "dodopizza.com",
+        "dodois.io"
+      ],
+      "evidence": [
+        {
+          "section": "Магазины и еда",
+          "match": "Додо Пицца"
+        }
+      ]
+    },
+    {
+      "id": "service-075",
+      "name": "Кинопоиск",
+      "domains": [
+        "kinopoisk.ru",
+        "kinopoisk-ru.clstorage.net"
+      ],
+      "evidence": [
+        {
+          "section": "Видео",
+          "match": "Кинопоиск"
+        }
+      ]
+    },
+    {
+      "id": "service-076",
+      "name": "Okko",
+      "domains": [
+        "okko.tv",
+        "okkoapi.tv",
+        "playfamily.ru",
+        "okko.sport"
+      ],
+      "evidence": [
+        {
+          "section": "Видео",
+          "match": "Okko"
+        }
+      ]
+    },
+    {
+      "id": "service-077",
+      "name": "PREMIER",
+      "domains": [
+        "premier.one"
+      ],
+      "evidence": [
+        {
+          "section": "Видео",
+          "match": "PREMIER"
+        }
+      ]
+    },
+    {
+      "id": "service-078",
+      "name": "RUTUBE",
+      "domains": [
+        "rutube.ru",
+        "rutubelist.ru",
+        "rtbcdn.ru",
+        "rutube.sport"
+      ],
+      "evidence": [
+        {
+          "section": "Видео",
+          "match": "RUTUBE"
+        }
+      ]
+    },
+    {
+      "id": "service-079",
+      "name": "Yappy",
+      "domains": [
+        "yappy.media"
+      ],
+      "evidence": [
+        {
+          "section": "Видео",
+          "match": "Yappy"
+        }
+      ]
+    },
+    {
+      "id": "service-080",
+      "name": "Иви",
+      "domains": [
+        "ivi.ru",
+        "ivi.tv"
+      ],
+      "evidence": [
+        {
+          "section": "Видео",
+          "match": "Иви"
+        }
+      ]
+    },
+    {
+      "id": "service-081",
+      "name": "Газета.Ru",
+      "domains": [
+        "gazeta.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "Газета.Ru"
+        }
+      ]
+    },
+    {
+      "id": "service-082",
+      "name": "Лента.ру",
+      "domains": [
+        "lenta.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "Lenta.ru"
+        }
+      ]
+    },
+    {
+      "id": "service-083",
+      "name": "РБК",
+      "domains": [
+        "rbc.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "РБК"
+        }
+      ]
+    },
+    {
+      "id": "service-084",
+      "name": "РИА Новости",
+      "domains": [
+        "ria.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "РИА Новости"
+        }
+      ]
+    },
+    {
+      "id": "service-085",
+      "name": "Комсомольская правда",
+      "domains": [
+        "kp.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "Комсомольская правда"
+        }
+      ]
+    },
+    {
+      "id": "service-086",
+      "name": "Рамблер",
+      "domains": [
+        "rambler.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "Рамблер"
+        }
+      ]
+    },
+    {
+      "id": "service-087",
+      "name": "ТАСС",
+      "domains": [
+        "tass.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "ТАСС"
+        }
+      ]
+    },
+    {
+      "id": "service-088",
+      "name": "Известия",
+      "domains": [
+        "iz.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "Известия"
+        }
+      ]
+    },
+    {
+      "id": "service-089",
+      "name": "Аргументы и Факты",
+      "domains": [
+        "aif.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "Аргументы и Факты"
+        }
+      ]
+    },
+    {
+      "id": "service-090",
+      "name": "Ведомости",
+      "domains": [
+        "vedomosti.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "Ведомости"
+        }
+      ]
+    },
+    {
+      "id": "service-091",
+      "name": "Московский комсомолец",
+      "domains": [
+        "mk.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "Московский комсомолец"
+        }
+      ]
+    },
+    {
+      "id": "service-092",
+      "name": "Российская газета",
+      "domains": [
+        "rg.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "Российская газета"
+        }
+      ]
+    },
+    {
+      "id": "service-093",
+      "name": "RT на русском",
+      "domains": [
+        "russian.rt.com"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "RT на русском"
+        }
+      ]
+    },
+    {
+      "id": "service-094",
+      "name": "Парламентская газета",
+      "domains": [
+        "pnp.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "Парламентская газета"
+        }
+      ]
+    },
+    {
+      "id": "service-095",
+      "name": "Коммерсант",
+      "domains": [
+        "kommersant.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Новости",
+          "match": "Коммерсант"
+        }
+      ]
+    },
+    {
+      "id": "service-096",
+      "name": "Первый канал",
+      "domains": [
+        "1tv.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Первый канал"
+        }
+      ]
+    },
+    {
+      "id": "service-097",
+      "name": "Пятый канал",
+      "domains": [
+        "5-tv.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Пятый канал"
+        }
+      ]
+    },
+    {
+      "id": "service-098",
+      "name": "НТВ",
+      "domains": [
+        "ntv.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "НТВ"
+        }
+      ]
+    },
+    {
+      "id": "service-099",
+      "name": "РЕН ТВ",
+      "domains": [
+        "ren.tv"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "РЕН ТВ"
+        }
+      ]
+    },
+    {
+      "id": "service-100",
+      "name": "ТВ-3",
+      "domains": [
+        "tv3.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "ТВ-3"
+        }
+      ]
+    },
+    {
+      "id": "service-101",
+      "name": "ТВ Центр",
+      "domains": [
+        "tvc.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "ТВ Центр"
+        }
+      ]
+    },
+    {
+      "id": "service-102",
+      "name": "ТНТ",
+      "domains": [
+        "tnt-online.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "ТНТ"
+        }
+      ]
+    },
+    {
+      "id": "service-103",
+      "name": "Пятница",
+      "domains": [
+        "friday.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Пятница"
+        }
+      ]
+    },
+    {
+      "id": "service-104",
+      "name": "СТС",
+      "domains": [
+        "ctc.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "СТС"
+        }
+      ]
+    },
+    {
+      "id": "service-105",
+      "name": "Домашний",
+      "domains": [
+        "domashniy.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Домашний"
+        }
+      ]
+    },
+    {
+      "id": "service-106",
+      "name": "Муз-ТВ",
+      "domains": [
+        "muz-tv.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Муз-ТВ"
+        }
+      ]
+    },
+    {
+      "id": "service-107",
+      "name": "Матч ТВ",
+      "domains": [
+        "matchtv.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Матч ТВ"
+        }
+      ]
+    },
+    {
+      "id": "service-108",
+      "name": "Вместе-РФ",
+      "domains": [
+        "vmeste-rf.tv"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Вместе-РФ"
+        }
+      ]
+    },
+    {
+      "id": "service-109",
+      "name": "Звезда",
+      "domains": [
+        "tvzvezda.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Звезда"
+        }
+      ]
+    },
+    {
+      "id": "service-110",
+      "name": "ВГТРК",
+      "domains": [
+        "vgtrk.ru",
+        "smotrim.ru",
+        "vesti.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "ВГТРК"
+        }
+      ]
+    },
+    {
+      "id": "service-111",
+      "name": "Витрина ТВ",
+      "domains": [
+        "vitrina.tv"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Витрина ТВ"
+        }
+      ]
+    },
+    {
+      "id": "service-112",
+      "name": "ОТР",
+      "domains": [
+        "otr-online.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "ОТР"
+        }
+      ]
+    },
+    {
+      "id": "service-113",
+      "name": "СПАС",
+      "domains": [
+        "spastv.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "СПАС"
+        }
+      ]
+    },
+    {
+      "id": "service-114",
+      "name": "МИР",
+      "domains": [
+        "mir24.tv"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "МИР"
+        }
+      ]
+    },
+    {
+      "id": "service-115",
+      "name": "Радиоплеер",
+      "domains": [
+        "radioplayer.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Радиоплеер"
+        }
+      ]
+    },
+    {
+      "id": "service-116",
+      "name": "Sport24",
+      "domains": [
+        "sport24.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Sport24"
+        }
+      ]
+    },
+    {
+      "id": "service-117",
+      "name": "Телеканал 360",
+      "domains": [
+        "360.ru",
+        "360tv.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Телеканал 360"
+        }
+      ]
+    },
+    {
+      "id": "service-118",
+      "name": "Дума ТВ",
+      "domains": [
+        "dumatv.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Дума ТВ"
+        }
+      ]
+    },
+    {
+      "id": "service-119",
+      "name": "Соловьёв Live",
+      "domains": [
+        "soloviev.live",
+        "smotrim.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "Соловьёв Live"
+        }
+      ]
+    },
+    {
+      "id": "service-120",
+      "name": "КХЛ",
+      "domains": [
+        "khl.ru"
+      ],
+      "evidence": [
+        {
+          "section": "ТВ и радио",
+          "match": "КХЛ"
+        }
+      ]
+    },
+    {
+      "id": "service-121",
+      "name": "РЖД",
+      "domains": [
+        "rzd.ru",
+        "rzd-bonus.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Транспорт и путешествия",
+          "match": "РЖД"
+        }
+      ]
+    },
+    {
+      "id": "service-122",
+      "name": "Туту",
+      "domains": [
+        "tutu.ru",
+        "tutu.travel"
+      ],
+      "evidence": [
+        {
+          "section": "Транспорт и путешествия",
+          "match": "Туту"
+        }
+      ]
+    },
+    {
+      "id": "service-123",
+      "name": "Такси Максим",
+      "domains": [
+        "taximaxim.ru",
+        "taximaxim.com"
+      ],
+      "evidence": [
+        {
+          "section": "Транспорт и путешествия",
+          "match": "такси Максим"
+        }
+      ]
+    },
+    {
+      "id": "service-124",
+      "name": "Аэрофлот",
+      "domains": [
+        "aeroflot.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Транспорт и путешествия",
+          "match": "Аэрофлот"
+        }
+      ]
+    },
+    {
+      "id": "service-125",
+      "name": "Победа",
+      "domains": [
+        "pobeda.aero"
+      ],
+      "evidence": [
+        {
+          "section": "Транспорт и путешествия",
+          "match": "Победа"
+        }
+      ]
+    },
+    {
+      "id": "service-126",
+      "name": "S7 Airlines",
+      "domains": [
+        "s7.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Транспорт и путешествия",
+          "match": "S7 Airlines"
+        }
+      ]
+    },
+    {
+      "id": "service-127",
+      "name": "Ситидрайв",
+      "domains": [
+        "citydrive.ru",
+        "youdrive.today"
+      ],
+      "evidence": [
+        {
+          "section": "Транспорт и путешествия",
+          "match": "Ситидрайв"
+        }
+      ]
+    },
+    {
+      "id": "service-128",
+      "name": "Деловые Линии",
+      "domains": [
+        "dellin.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Транспорт и путешествия",
+          "match": "Деловые Линии"
+        }
+      ]
+    },
+    {
+      "id": "service-129",
+      "name": "Гранд Сервис Экспресс",
+      "domains": [
+        "grandtrain.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Транспорт и путешествия",
+          "match": "Гранд Сервис Экспресс"
+        }
+      ]
+    },
+    {
+      "id": "service-130",
+      "name": "Делимобиль",
+      "domains": [
+        "delimobil.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Транспорт и путешествия",
+          "match": "Делимобиль"
+        }
+      ]
+    },
+    {
+      "id": "service-131",
+      "name": "BelkaCar",
+      "domains": [
+        "belkacar.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Транспорт и путешествия",
+          "match": "BelkaCar"
+        }
+      ]
+    },
+    {
+      "id": "service-132",
+      "name": "StarLine",
+      "domains": [
+        "starline.ru",
+        "starline-online.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Транспорт и путешествия",
+          "match": "StarLine"
+        }
+      ]
+    },
+    {
+      "id": "service-133",
+      "name": "CMD",
+      "domains": [
+        "cmd-online.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Здоровье",
+          "match": "CMD"
+        }
+      ]
+    },
+    {
+      "id": "service-134",
+      "name": "ЭЛТА, Сателлит",
+      "domains": [
+        "eltaltd.ru",
+        "диабетподконтролем.рф"
+      ],
+      "evidence": [
+        {
+          "section": "Здоровье",
+          "match": "ЭЛТА"
+        }
+      ]
+    },
+    {
+      "id": "service-135",
+      "name": "МЕДСИ",
+      "domains": [
+        "medsi.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Здоровье",
+          "match": "МЕДСИ"
+        }
+      ]
+    },
+    {
+      "id": "service-136",
+      "name": "Мать и дитя",
+      "domains": [
+        "mamadeti.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Здоровье",
+          "match": "Мать и дитя"
+        }
+      ]
+    },
+    {
+      "id": "service-137",
+      "name": "HeadHunter",
+      "domains": [
+        "hh.ru",
+        "hhcdn.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Работа и образование",
+          "match": "HeadHunter"
+        }
+      ]
+    },
+    {
+      "id": "service-138",
+      "name": "ФИЦ Биотехнологии РАН",
+      "domains": [
+        "fbras.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Работа и образование",
+          "match": "ФИЦ Биотехнологии РАН"
+        }
+      ]
+    },
+    {
+      "id": "service-139",
+      "name": "Эвотор",
+      "domains": [
+        "evotor.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Работа и образование",
+          "match": "Эвотор"
+        }
+      ]
+    },
+    {
+      "id": "service-140",
+      "name": "1С",
+      "domains": [
+        "1c.ru",
+        "1c.com",
+        "1capp.com",
+        "1ccloud.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Работа и образование",
+          "match": "Фирма 1С"
+        }
+      ]
+    },
+    {
+      "id": "service-141",
+      "name": "Труконф",
+      "domains": [
+        "trueconf.ru",
+        "trueconf.com"
+      ],
+      "evidence": [
+        {
+          "section": "Работа и образование",
+          "match": "Труконф"
+        }
+      ]
+    },
+    {
+      "id": "service-142",
+      "name": "Сбер2B",
+      "domains": [
+        "sber2b.ru",
+        "sberbs.ru",
+        "esphere.ru",
+        "sbercrm.com"
+      ],
+      "evidence": [
+        {
+          "section": "Работа и образование",
+          "match": "Сбер2B"
+        }
+      ]
+    },
+    {
+      "id": "service-143",
+      "name": "HRlink",
+      "domains": [
+        "hrlink.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Работа и образование",
+          "match": "HRlink"
+        }
+      ]
+    },
+    {
+      "id": "service-144",
+      "name": "Тензор, СБИС, Saby",
+      "domains": [
+        "tensor.ru",
+        "sbis.ru",
+        "saby.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Работа и образование",
+          "match": "Тензор"
+        }
+      ]
+    },
+    {
+      "id": "service-145",
+      "name": "СКБ Контур",
+      "domains": [
+        "kontur.ru",
+        "kontur.host",
+        "kontur-inc.com"
+      ],
+      "evidence": [
+        {
+          "section": "Работа и образование",
+          "match": "СКБ Контур"
+        }
+      ]
+    },
+    {
+      "id": "service-146",
+      "name": "РУВИКИ",
+      "domains": [
+        "ruwiki.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Работа и образование",
+          "match": "РУВИКИ"
+        }
+      ]
+    },
+    {
+      "id": "service-147",
+      "name": "Российское общество Знание",
+      "domains": [
+        "znanierussia.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Работа и образование",
+          "match": "Российское общество Знание"
+        }
+      ]
+    },
+    {
+      "id": "service-148",
+      "name": "Авито",
+      "domains": [
+        "avito.ru",
+        "avito.st"
+      ],
+      "evidence": [
+        {
+          "section": "Другие сервисы",
+          "match": "Авито"
+        }
+      ]
+    },
+    {
+      "id": "service-149",
+      "name": "2ГИС",
+      "domains": [
+        "2gis.ru",
+        "2gis.com",
+        "2gis.tech",
+        "maps.2gis.com"
+      ],
+      "evidence": [
+        {
+          "section": "Другие сервисы",
+          "match": "2ГИС"
+        }
+      ]
+    },
+    {
+      "id": "service-150",
+      "name": "Gismeteo",
+      "domains": [
+        "gismeteo.ru",
+        "gismeteo.com"
+      ],
+      "evidence": [
+        {
+          "section": "Другие сервисы",
+          "match": "Gismeteo"
+        }
+      ]
+    },
+    {
+      "id": "service-151",
+      "name": "Цезарь Сателлит",
+      "domains": [
+        "csat.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Другие сервисы",
+          "match": "Цезарь Сателлит"
+        }
+      ]
+    },
+    {
+      "id": "service-152",
+      "name": "СДЭК",
+      "domains": [
+        "cdek.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Другие сервисы",
+          "match": "СДЭК"
+        }
+      ]
+    },
+    {
+      "id": "service-153",
+      "name": "Достависта",
+      "domains": [
+        "dostavista.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Другие сервисы",
+          "match": "Достависта"
+        }
+      ]
+    },
+    {
+      "id": "service-154",
+      "name": "ЛизаАлерт",
+      "domains": [
+        "lizaalert.org"
+      ],
+      "evidence": [
+        {
+          "section": "Другие сервисы",
+          "match": "ЛизаАлерт"
+        }
+      ]
+    },
+    {
+      "id": "service-155",
+      "name": "Добро.рф",
+      "domains": [
+        "добро.рф",
+        "dobro.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Другие сервисы",
+          "match": "Дoбpo.pф"
+        }
+      ]
+    },
+    {
+      "id": "service-156",
+      "name": "Народный фронт",
+      "domains": [
+        "onf.ru"
+      ],
+      "evidence": [
+        {
+          "section": "Другие сервисы",
+          "match": "Народный фронт"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "Yota",
+      "text": "Личный кабинет , приложение Yota и сайт"
+    },
+    {
+      "title": "Госуслуги и документы",
+      "text": "Госуслуги, Госключ, Почта России, ГИС ЖКХ, ГИС ТОР КНД, Федеральное казначейство и другие, ЦРПТ, ГИС ЭПД, обращения в ведомства и платформа для выборов"
+    },
+    {
+      "title": "Органы власти",
+      "text": "Сайты Правительства, Администрации Президента России, Совет Федерации, ФНС, МВД, МЧС"
+    },
+    {
+      "title": "Государственные проекты и компании",
+      "text": "Прямая линия с Владимиром Путиным, Объясняем.рф, Движение первых и другие, КС «Среда» и портал госслужбы, Росатом, Россети, Росагролизинг, Роскачество, АО «ГЛОНАСС», Ростех, Роснефть"
+    },
+    {
+      "title": "Банки",
+      "text": "ПСБ, ВТБ, Альфа‑Банк и платежная система «Мир» — система быстрых платежей, Mir Pay, Газпромбанк"
+    },
+    {
+      "title": "Финансы",
+      "text": "Финуслуги, Московская биржа, Банк России"
+    },
+    {
+      "title": "Все сервисы VK",
+      "text": "Например, ВКонтакте, Музыка, Дзен, Mail.ru, RuStore, Одноклассники и мессенджер МАКС"
+    },
+    {
+      "title": "Все сервисы Яндекса",
+      "text": "Например, Алиса AI и Поиск с ответами Алисы AI, Такси, Еда, Лавка, Музыка, Навигатор, Карты, Почта, Едадил"
+    },
+    {
+      "title": "Маркетплейсы",
+      "text": "OZON, Wildberries, Мегамаркет"
+    },
+    {
+      "title": "Магазины и еда",
+      "text": "Магнит, Азбука вкуса, Дикси, Пятерочка, Перекресток, Чижик, METRO, ВкусВилл, SPAR, Ашан, Петрович, Детский мир и другие, Много лосося, Вкусно — и точка, Бургер Кинг, Самокат, Купер, Лента, О’КЕЙ, Додо Пицца"
+    },
+    {
+      "title": "Видео",
+      "text": "Кинопоиск, Okko, VK Видео, PREMIER, RUTUBE, Yappy, Иви"
+    },
+    {
+      "title": "Новости",
+      "text": "Газета.Ru, Lenta.ru, РБК, РИА Новости, Комсомольская правда, Рамблер, ТАСС, Известия, Аргументы и Факты и другие, Ведомости, Московский комсомолец, Российская газета, RT на русском, Парламентская газета, Коммерсант"
+    },
+    {
+      "title": "ТВ и радио",
+      "text": "Первый канал, Пятый канал, НТВ, РЕН ТВ, ТВ‑3, ТВ Центр, ТНТ, Пятница, СТС, Домашний, Муз‑ТВ, Матч ТВ, Вместе‑РФ и другие, Телеканал «Звезда», ВГТРК, Витрина ТВ, ОТР, СПАС, МИР, Радиоплеер, Sport24, Телеканал 360, Дума ТВ, Соловьёв Live, КХЛ"
+    },
+    {
+      "title": "Транспорт и путешествия",
+      "text": "РЖД, Туту, такси «Максим», Аэрофлот, Победа, S7 Airlines, Ситидрайв, Деловые Линии, Гранд Сервис Экспресс, Делимобиль, BelkaCar, StarLine"
+    },
+    {
+      "title": "Здоровье",
+      "text": "CMD, ЭЛТА, МЕДСИ, Мать и дитя, POCTech CGM, ДиаНянь, iCan Health, iCan Reach, Syai Link, FreeStyle Libre 2, Glutec и другие, MQ CGM, Medtrum EasyPatch, Medtrum EasyTouch, Medtrum EasyFollow, Medtrum EasySense, M‑LINE, мобильное приложение «М‑Лайн. Дистанционный контроль сахарного диабета», Сателлит Online, IoMT.Istok, мобильное приложение и медицинские изделия INME, Yuwell Anytime, Follow Anytime, Lumiflex, Lumipod, Hematonix"
+    },
+    {
+      "title": "Работа и образование",
+      "text": "HeadHunter, ФИЦ Биотехнологии РАН, Эвотор, Фирма «1С», Труконф, Сбер2B, HRlink, Тензор, СКБ Контур, РУВИКИ и другие, Инспектор, Российское общество «Знание»"
+    },
+    {
+      "title": "Другие сервисы",
+      "text": "Авито, 2ГИС, Gismeteo, Цезарь Сателлит, СДЭК, Достависта, ЛизаАлерт, Дoбpo.pф, Народный фронт"
+    }
+  ],
+  "unmapped_mentions": [
+    {
+      "section": "Видео",
+      "text": "VK Видео"
+    },
+    {
+      "section": "Здоровье",
+      "text": "POCTech CGM"
+    },
+    {
+      "section": "Здоровье",
+      "text": "ДиаНянь"
+    },
+    {
+      "section": "Здоровье",
+      "text": "iCan Health"
+    },
+    {
+      "section": "Здоровье",
+      "text": "iCan Reach"
+    },
+    {
+      "section": "Здоровье",
+      "text": "Syai Link"
+    },
+    {
+      "section": "Здоровье",
+      "text": "FreeStyle Libre 2"
+    },
+    {
+      "section": "Здоровье",
+      "text": "Glutec и другие"
+    },
+    {
+      "section": "Здоровье",
+      "text": "MQ CGM"
+    },
+    {
+      "section": "Здоровье",
+      "text": "Medtrum EasyPatch"
+    },
+    {
+      "section": "Здоровье",
+      "text": "Medtrum EasyTouch"
+    },
+    {
+      "section": "Здоровье",
+      "text": "Medtrum EasyFollow"
+    },
+    {
+      "section": "Здоровье",
+      "text": "Medtrum EasySense"
+    },
+    {
+      "section": "Здоровье",
+      "text": "M‑LINE"
+    },
+    {
+      "section": "Здоровье",
+      "text": "мобильное приложение «М‑Лайн. Дистанционный контроль сахарного диабета»"
+    },
+    {
+      "section": "Здоровье",
+      "text": "IoMT.Istok"
+    },
+    {
+      "section": "Здоровье",
+      "text": "мобильное приложение и медицинские изделия INME"
+    },
+    {
+      "section": "Здоровье",
+      "text": "Yuwell Anytime"
+    },
+    {
+      "section": "Здоровье",
+      "text": "Follow Anytime"
+    },
+    {
+      "section": "Здоровье",
+      "text": "Lumiflex"
+    },
+    {
+      "section": "Здоровье",
+      "text": "Lumipod"
+    },
+    {
+      "section": "Здоровье",
+      "text": "Hematonix"
+    }
+  ],
+  "geodata": {
+    "release": "202609052329",
+    "geosite_sha256": "6fb14357520e6d9e8ba3e5755ddabadd6e902c7a7d9f21e5fe56b9414802e370"
+  },
+  "incy_source_url": "https://raw.githubusercontent.com/pivazyaa/Routing-INCY-HAPP/main/dist/Incy-YOTA-Whitelist.json",
+  "deployment": "URLs generated; hosting and iPhone subscription must be verified separately",
+  "limitations": [
+    "Official list names services, not their complete domain/IP ACL.",
+    "New unrecognized services remain via VPN until domain review.",
+    "Happ routing must be included in its VPN subscription.",
+    "iOS can delay background refresh; reconnect after routing changes.",
+    "No iPhone/YOTA-whitelist runtime test performed."
+  ]
+}
