@@ -1,0 +1,51 @@
+name: Update YOTA routing
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+  push:
+    paths:
+      - 'catalog.json'
+      - 'profile-base.json'
+      - 'update.py'
+      - 'test_update.py'
+      - '.github/workflows/update-routing.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: yota-routing-publish
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PUBLISH_BRANCH: ${{ github.event.repository.default_branch }}
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check whitelist changes and routing boundaries
+        run: python -m unittest discover -s . -p test_update.py -v
+      - name: Read YOTA and rebuild both profiles
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python update.py --repository "$GITHUB_REPOSITORY" --branch "$PUBLISH_BRANCH"
+      - name: Publish one complete revision
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- dist
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'Update official YOTA membership and routing profiles'
+          git push origin "HEAD:$PUBLISH_BRANCH"
