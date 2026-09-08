@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-08T06:30:00+00:00",
-  "profile_version": 1788849000,
+  "checked_at": "2026-09-08T12:31:11+00:00",
+  "profile_version": 1788870671,
   "source": "https://www.yota.ru/whitelist",
   "scope": "Federal services; region unspecified",
-  "source_sha256": "372eab6fa77ca1ce71a850fe965869ae45c86ccc31ea82f3c7e4b87749bba479",
+  "source_sha256": "458fceca5e4fd9aef084b2b49f088aa2e75ad41958bee0cca56172ddb9872b21",
   "catalog_sha256": "9d62584d3a41f71a801701e94ce674f515e99de09b0dd04a288767ffe29c43b2",
   "active_services_count": 156,
   "direct_domains_count": 286,
