@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-09T18:28:07+00:00",
-  "profile_version": 1788978487,
+  "checked_at": "2026-09-10T00:30:25+00:00",
+  "profile_version": 1789000225,
   "source": "https://www.yota.ru/whitelist",
   "scope": "Federal services; region unspecified",
-  "source_sha256": "23d7bd4be59b96650e636870785926bf1317a339e00e534cbfff67abfc2348e6",
+  "source_sha256": "bb5c2ab22b1f3a214c6ddc8647a3f7dc1795b40b7c60e6700efd3ab2d4754b56",
   "catalog_sha256": "9d62584d3a41f71a801701e94ce674f515e99de09b0dd04a288767ffe29c43b2",
   "active_services_count": 156,
   "direct_domains_count": 286,
@@ -2495,13 +2495,13 @@
     }
   ],
   "geodata": {
-    "release": "202609082347",
-    "geosite_sha256": "110be548fd2c2d84249310842667f996e01ab5c753d526717a0f434a5a08e5ea"
+    "release": "202609092346",
+    "geosite_sha256": "5193ed098d950b91ebfe7d40b91b298e5ac9f0f69aa2698c757bee2aceee8c29"
   },
   "incy_profile_mode": "inline-light-v1",
   "incy_local_ad_rules": 950,
   "incy_apple_rules": 1790,
-  "full_upstream_ad_rules": 186402,
+  "full_upstream_ad_rules": 186777,
   "incy_source_url": "https://pivazyaa.github.io/Routing-INCY-HAPP/Incy-YOTA-Whitelist.json",
   "deployment": "URLs generated; hosting and iPhone subscription must be verified separately",
   "limitations": [
