@@ -77,10 +77,10 @@
     "domain:scounter.rambler.ru": "0.0.0.0",
     "domain:csp.yandex.net": "0.0.0.0",
     "domain:cs.avito.ru": "0.0.0.0",
-    "domain:counter.smotrim.ru": "0.0.0.0",
-    "domain:counter.rambler.ru": "0.0.0.0",
     "domain:uaas.yandex.ru": "0.0.0.0",
     "domain:apistats.rg.ru": "0.0.0.0",
+    "domain:counter.smotrim.ru": "0.0.0.0",
+    "domain:counter.rambler.ru": "0.0.0.0",
     "domain:showbiz.mail.ru": "0.0.0.0",
     "domain:cnt.rambler.ru": "0.0.0.0",
     "domain:clck.yandex.com": "0.0.0.0",
@@ -3181,5 +3181,5 @@
   "DomainStrategy": "AsIs",
   "FakeDNS": "false",
   "useChunkFiles": false,
-  "LastUpdated": "1789237463"
+  "LastUpdated": "1789259499"
 }
