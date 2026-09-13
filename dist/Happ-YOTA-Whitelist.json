@@ -433,7 +433,7 @@
   "BlockIp": [],
   "DomainStrategy": "AsIs",
   "FakeDNS": "false",
-  "LastUpdated": "1789302447",
+  "LastUpdated": "1789323916",
   "UseChunkFiles": "true",
   "RouteOrder": "block-proxy-direct"
 }
