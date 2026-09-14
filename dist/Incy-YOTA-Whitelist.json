@@ -49,8 +49,8 @@
     "domain:mediator.imgsmail.ru": "0.0.0.0",
     "domain:adsdk.yandex.ru": "0.0.0.0",
     "domain:metrika.kontur.ru": "0.0.0.0",
-    "domain:vybbem.mk.ru": "0.0.0.0",
     "domain:fufoir.aif.ru": "0.0.0.0",
+    "domain:vybbem.mk.ru": "0.0.0.0",
     "domain:flowers.moex.com": "0.0.0.0",
     "domain:adxwxw.kp.ru": "0.0.0.0",
     "domain:ms.dzen.ru": "0.0.0.0",
@@ -3181,5 +3181,5 @@
   "DomainStrategy": "AsIs",
   "FakeDNS": "false",
   "useChunkFiles": false,
-  "LastUpdated": "1789323916"
+  "LastUpdated": "1789367522"
 }
