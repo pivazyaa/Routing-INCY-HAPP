@@ -25,9 +25,9 @@
     "domain:1l-view.mail.ru": "0.0.0.0",
     "domain:journal-bt.wildberries.ru": "0.0.0.0",
     "domain:zgqgig.skillbox.ru": "0.0.0.0",
+    "domain:kiks.yandex.ru": "0.0.0.0",
     "domain:a.ria.ru": "0.0.0.0",
     "domain:a.rutube.ru": "0.0.0.0",
-    "domain:kiks.yandex.ru": "0.0.0.0",
     "domain:a.wb.ru": "0.0.0.0",
     "domain:kraken.rambler.ru": "0.0.0.0",
     "domain:yefktd.avito.ru": "0.0.0.0",
@@ -39,8 +39,8 @@
     "domain:adfox.yandex.ru": "0.0.0.0",
     "domain:adfstat.yandex.ru": "0.0.0.0",
     "domain:log.dzen.ru": "0.0.0.0",
-    "domain:ads-m.rustore.ru": "0.0.0.0",
     "domain:log.rutube.ru": "0.0.0.0",
+    "domain:ads-m.rustore.ru": "0.0.0.0",
     "domain:ads.edadeal.ru": "0.0.0.0",
     "domain:market-click-baobab.yandex.ru": "0.0.0.0",
     "domain:mc.yandex.com": "0.0.0.0",
@@ -3180,5 +3180,5 @@
   "DomainStrategy": "AsIs",
   "FakeDNS": "false",
   "useChunkFiles": false,
-  "LastUpdated": "1790274452"
+  "LastUpdated": "1790296335"
 }
