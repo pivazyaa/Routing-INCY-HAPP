@@ -105,8 +105,8 @@
     "domain:stats.rustore.ru": "0.0.0.0",
     "domain:stats.vk-portal.net": "0.0.0.0",
     "domain:telemetry.dzen.ru": "0.0.0.0",
-    "domain:bs.yandex.ru": "0.0.0.0",
     "domain:browser-updater.yandex.net": "0.0.0.0",
+    "domain:bs.yandex.ru": "0.0.0.0",
     "domain:stat.radar.imgsmail.ru": "0.0.0.0",
     "domain:startup.mobile.yandex.net": "0.0.0.0",
     "domain:banners.mobile.yandex.net": "0.0.0.0",
@@ -3180,5 +3180,5 @@
   "DomainStrategy": "AsIs",
   "FakeDNS": "false",
   "useChunkFiles": false,
-  "LastUpdated": "1790360758"
+  "LastUpdated": "1790382603"
 }
